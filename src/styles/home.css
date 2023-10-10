@@ -1,0 +1,6 @@
+.image-hotel {
+    background-image: url("./img-hotel.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 1rem;
+  }
