@@ -1,3 +1,10 @@
+# Welcome to the Hotel Application
+
+Thank you for visiting our hotel application! We are currently in the process of developing the frontend, so you may encounter features that are under construction.
+
+We invite you to follow us and stay tuned for updates to enjoy the final version of the application. Your feedback and suggestions are highly valued. Thank you for your interest!
+
+
 ```
 hotel-app-react-vite/ 
  ├── public/ 
