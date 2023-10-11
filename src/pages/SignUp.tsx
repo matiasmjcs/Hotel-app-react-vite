@@ -1,3 +1,4 @@
+import { Button, LinearProgress, TextField } from '@mui/material';
 import axios from 'axios'
 import React, { useState } from 'react'
 import toast, { Toaster } from 'react-hot-toast'
@@ -23,7 +24,7 @@ export const SignUp = () => {
     try {
       e.preventDefault()
       setLoading(true)
-      const response = await axios.post('http://localhost:3000/users/signup', user)
+      const response = await axios.post('http://localhost:3000/api/v1/user/signup', user)
       console.log(response)
       toast.success('Successfully SingUp!')
       setUser(userInicialValue)
@@ -33,45 +34,37 @@ export const SignUp = () => {
     } catch (error) {
       console.log(error)
     }
-    finally{
+    finally {
       setLoading(false)
     }
   }
   return (
-    <main className="p-4 t text-black dark:text-white grid justify-items-center">
-       <h4 className='text-2xl white:text-black font-bold text-center'>SignUp</h4>
-      <form onSubmit={signUp} className="max-w-md mx-auto dark:text-white dark:bg-slate-950 bg-white p-6 rounded-lg shadow-md">
-        <label htmlFor="username" className="block font-semibold mb-1">username</label>
-        <input
-          id="username"
+    <main className="p-4 grid justify-items-center">
+      <h4 className='text-2xl text-slate-500 font-bold text-center'>SignUp</h4>
+      <form onSubmit={signUp} className="max-w-md my-2 mx-auto flex flex-col gap-2 md:w-[500px] text-black p-6 rounded-lg shadow-md">
+        <TextField
           type="text"
           value={user.username}
-          onChange={(e) => setUser({ ...user, username: e.target.value })}
-          className="w-full border dark:bg-slate-500 dark:border-black border-gray-300 rounded-md p-2 focus:outline-none focus:border-blue-500"
-        />
-        <label htmlFor="email" className="block font-semibold mb-1">email</label>
-        <input
-          id="email"
+          onChange={(e) => setUser({ ...user, username: e.target.value })} id="username" label="username" variant="standard" />
+
+        <TextField
           type="text"
           value={user.email}
-          onChange={(e) => setUser({ ...user, email: e.target.value })}
-          className="w-full border dark:bg-slate-500 dark:border-black border-gray-300 rounded-md p-2 focus:outline-none focus:border-blue-500"
-        />
-        <label htmlFor="password" className="block font-semibold mb-1">password</label>
-        <input
-          id="password"
+          onChange={(e) => setUser({ ...user, email: e.target.value })} id="email" label="email" variant="standard" />
+        <TextField
           type="password"
           value={user.password}
-          onChange={(e) => setUser({ ...user, password: e.target.value })}
-          className="w-full border dark:bg-slate-500 dark:border-black border-gray-300 rounded-md p-2 focus:outline-none focus:border-blue-500"
-        />
-      <Toaster />
-      {loading ? <span>loading...</span>:
-      <button className="w-full bg-blue-500 text-white font-semibold py-2 mt-4 rounded-md hover:bg-blue-600 focus:outline-none focus:ring focus:ring-blue-300">SignUp</button>
-      }
+          onChange={(e) => setUser({ ...user, password: e.target.value })} id="password" label="password" variant="standard" />
+
+        <Toaster />
+        {loading ?
+          <LinearProgress color="success" />
+          :
+          <Button type='submit' variant='contained'>Sign up</Button>
+        }
       </form>
-      <a onClick={()=>navigate('/login')} className='cursor-pointer p-2 text-black dark:text-white text-center' >Already have an account? Log in here</a>
-      <a onClick={()=>navigate('/')} className='cursor-pointer p-2 text-black dark:text-white text-center' >Home</a>
+      <a onClick={() => navigate('/login')} className='cursor-pointer p-2 text-black ' >Already have an account? Log in here</a>
+      <a onClick={() => navigate('/')} className='cursor-pointer p-2 text-black ' >Home</a>
     </main>
 
   )
