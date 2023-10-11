@@ -9,7 +9,7 @@ export const Home = () => {
       </h1>
     </header>
     <main className="p-2 flex flex-col w-full justify-center justify-items-center items-center">
-      <img className="w-[90%] h-full max-w-xl rounded-md" src="/src/assets/img-hotel.png"/>
+      <img className="w-[90%] h-full max-w-xl rounded-md" src="./src/assets/img-hotel.png"/>
       <Loginsignup/>
     </main>
     </>
