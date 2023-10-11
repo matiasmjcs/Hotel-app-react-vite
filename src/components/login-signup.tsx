@@ -3,7 +3,10 @@ import { Link } from "react-router-dom"
 
 export const Loginsignup = () => {
     return(
-        <section className="flex w-full h-full flex-col justify-center justify-items-center">
+        <section className="flex w-full h-full mt-5 flex-col justify-center justify-items-center">
+            <section>
+                <h2 className="text-lg font-semibold p-2 text-center text-slate-600">Don't miss out on exclusive offers. Sign up today.</h2>
+            </section>
         <section className='p-2 flex gap-2 w-full justify-center'>
           <Link to="/login">
             <Button variant="contained">

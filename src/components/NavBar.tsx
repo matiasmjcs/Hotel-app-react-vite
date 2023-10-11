@@ -22,7 +22,7 @@ export default function NavBarComponent() {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-          Hotel Alhambra del Golfo
+          Alhambra of the Gulf Hotel
           </Typography>
           <Link to="/login">
           <Button color="inherit">Login</Button>
