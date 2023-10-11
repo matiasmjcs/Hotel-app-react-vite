@@ -57,7 +57,7 @@ export const Login = () => {
       <button className="w-full bg-blue-500 text-white font-semibold py-2 mt-4 rounded-md hover:bg-blue-600 focus:outline-none focus:ring focus:ring-blue-300">Login</button>
       }
       </form>
-      <a onClick={()=>navigate('/singup')} className='cursor-pointer p-2 text-black dark:text-white text-center' >Don't have an account? Sign up here</a>
+      <a onClick={()=>navigate('/signup')} className='cursor-pointer p-2 text-black dark:text-white text-center' >Don't have an account? Sign up here</a>
       <a onClick={()=>navigate('/')} className='cursor-pointer p-2 text-black dark:text-white text-center' >Home</a>
       <Toaster />
     </main>

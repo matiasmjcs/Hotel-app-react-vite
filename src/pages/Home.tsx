@@ -15,9 +15,9 @@ export const Home = () => {
             Login
             </Button>
           </Link>
-          <Link  to="/singup">
+          <Link  to="/signup">
             <Button variant="contained">
-            singup
+            signup
             </Button>
           </Link>
         </section>
