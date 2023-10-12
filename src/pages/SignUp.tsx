@@ -24,7 +24,7 @@ export const SignUp = () => {
     try {
       e.preventDefault()
       setLoading(true)
-      const response = await axios.post('http://localhost:3000/api/v1/user/signup', user)
+      const response = await axios.post('https://hotel-app-react-vite.vercel.app/api/v1/user/signup', user)
       console.log(response)
       toast.success('Successfully SingUp!')
       setUser(userInicialValue)

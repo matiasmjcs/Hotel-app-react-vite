@@ -20,7 +20,7 @@ export const Login = () => {
     try {
       e.preventDefault()
       setLoading(true)
-      const response = await axios.post('http://localhost:3000/api/v1/user/login', user)
+      const response = await axios.post('https://hotel-app-react-vite.vercel.app/api/v1/user/login', user)
       toast.success('Successfully Login!')
       console.log(response)
       setUser(userInicialValue)
