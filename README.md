@@ -8,12 +8,15 @@ We invite you to follow us and stay tuned for updates to enjoy the final version
 ```
 hotel-app-react-vite/ 
  ├── public/ 
+ │    └── _redirects
+ │    └── img-hotel.png
  │    └── vite.svg
  ├── src/
  │    ├── assets/
  │    │    └── react.svg
  │    ├── components/
  │    │    ├── Footer.tsx
+ │    │    ├── Login-signup.tsx
  │    │    └── NavBar.tsx
  │    ├── pages/
  │    │    ├── Home.tsx
@@ -22,9 +25,6 @@ hotel-app-react-vite/
  │    │    └── SignUp.tsx
  │    ├── router/
  │    │    └── index.tsx
- │    ├── styles/
- │    │    ├── home.css
- │    │    └── img-hotel.png
  │    ├── App.tsx
  │    ├── main.tsx
  │    ├── App.css

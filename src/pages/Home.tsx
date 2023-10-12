@@ -1,4 +1,4 @@
-import { Loginsignup } from "../components/login-signup"
+import { Loginsignup } from "../components/Login-signup"
 
 export const Home = () => {
   return (
