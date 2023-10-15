@@ -12,13 +12,24 @@ hotel-app-react-vite/
  │    └── img-hotel.png
  │    └── vite.svg
  ├── src/
+ │    ├── __test__/
+ │    │    └── App.spec.tsx
  │    ├── assets/
  │    │    └── react.svg
  │    ├── components/
+ │    │    ├── __test__/
+ │    │    │    └── Footer.spec.tsx
+ │    │    │    └── Login-signup.spec.tsx
+ │    │    │    └── NavBar.spec.tsx
  │    │    ├── Footer.tsx
  │    │    ├── Login-signup.tsx
  │    │    └── NavBar.tsx
  │    ├── pages/
+ │    │    ├── __test__/
+ │    │    │    └── Home.spec.tsx
+ │    │    │    └── Login.spec.tsx
+ │    │    │    └── Profile.spec.tsx
+ │    │    │    └── SignUp.spec.tsx
  │    │    ├── Home.tsx
  │    │    ├── Login.tsx
  │    │    ├── Profile.tsx
@@ -33,6 +44,7 @@ hotel-app-react-vite/
  ├── .eslintrc.js
  ├── .gitignore
  ├── index.html
+ ├── setup.ts
  ├── package-lock.json
  ├── package.json
  ├── postcss.config.js
