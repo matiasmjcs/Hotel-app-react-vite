@@ -16,7 +16,7 @@ const Footer = () => {
           </ul>
         </article>
       </section>
-    </footer>
+    </footer>  
   );
 };
 

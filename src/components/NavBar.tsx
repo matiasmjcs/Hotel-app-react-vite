@@ -1,41 +1,32 @@
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
-import IconButton from '@mui/material/IconButton';
-import MenuIcon from '@mui/icons-material/Menu';
-import { Link, useLocation } from 'react-router-dom';
+import { useLocation } from "react-router-dom";
 
 export default function NavBarComponent() {
   const location = useLocation();
   return (
-    <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
-        <Toolbar>
-          <IconButton
-            size="large"
-            edge="start"
-            color="inherit"
-            aria-label="menu"
-            sx={{ mr: 2 }}
-            >
-            <MenuIcon />
-          </IconButton>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-          Alhambra of the Gulf Hotel
-          </Typography>
-          {
-            location.pathname === '/login' ? 
-            <Link to="/signup">
-            <Button color="inherit">Sign Up</Button>
-            </Link> : 
-              <Link to="/login">
-              <Button color="inherit">Login</Button>
-              </Link>
-}
-        </Toolbar>
-      </AppBar>
-    </Box>
+    <nav className=" grid justify-items-end fixed top-0 right-0 font-mono z-10">
+      <ul className="flex flex-row gap-3 px-2 text-white font-semibold text-lg">
+        <li className="p-2">
+          <a href="/">Home</a>
+        </li >
+        <li className="p-2">
+          <a href="/hotels">hotels</a>
+        </li>
+        {
+          location.pathname === "/" ?  <li className="p-2">
+          <a href="/login">login</a>
+        </li> : null
+        }
+        {
+          location.pathname === "/login" ?  <li className="p-2">
+          <a href="/signup">Signup</a>
+        </li> : null
+        }
+        {
+          location.pathname === "/signup" ? <li className="p-2">
+          <a href="/login">Login</a>
+        </li> : null
+        }
+      </ul>
+    </nav>
   );
 }

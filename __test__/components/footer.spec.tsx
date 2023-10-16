@@ -29,7 +29,7 @@ describe('Footer', () => {
 
     test("testing contact elements", () => {
         render(
-            <BrowserRouter>
+            <BrowserRouter> 
                 <Footer />
             </BrowserRouter>
         )
