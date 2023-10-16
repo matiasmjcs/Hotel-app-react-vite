@@ -7,32 +7,40 @@ We invite you to follow us and stay tuned for updates to enjoy the final version
 
 ```
 hotel-app-react-vite/ 
+ ├── __test__/ 
+ │    ├── components/
+ │    │    └── App.spec.tsx
+ │    │    └── footer.spec.tsx
+ │    │    └── LinkAuthentication.spec.tsx
+ │    │    └── Login.spec.tsx
+ │    │    └── NavBar.spec.tsx
+ │    │    └── SignUp.spec.tsx
+ │    │    └── TitleAuthentication.spec.tsx
+ │    ├── pages/
+ │    │    └── Home.spec.tsx
+ │    │    └── Login.spec.tsx
+ │    │    └── Profile.spec.tsx
+ │    │    └── SignUp.spec.tsx
  ├── public/ 
  │    └── _redirects
  │    └── img-hotel.png
  │    └── vite.svg
  ├── src/
- │    ├── __test__/
- │    │    └── App.spec.tsx
  │    ├── assets/
  │    │    └── react.svg
  │    ├── components/
- │    │    ├── __test__/
- │    │    │    └── Footer.spec.tsx
- │    │    │    └── Login-signup.spec.tsx
- │    │    │    └── NavBar.spec.tsx
- │    │    ├── Footer.tsx
- │    │    ├── Login-signup.tsx
+ │    │    ├── authentication/
+ │    │    │    └── LinkAuthentication.tsx
+ │    │    │    └── Login.tsx
+ │    │    │    └── SignUp.tsx
+ │    │    │    └── TitleAuthentication.tsx
+ │    │    └── Footer.tsx
+ │    │    └── LoginSignup.tsx
  │    │    └── NavBar.tsx
  │    ├── pages/
- │    │    ├── __test__/
- │    │    │    └── Home.spec.tsx
- │    │    │    └── Login.spec.tsx
- │    │    │    └── Profile.spec.tsx
- │    │    │    └── SignUp.spec.tsx
- │    │    ├── Home.tsx
- │    │    ├── Login.tsx
- │    │    ├── Profile.tsx
+ │    │    └── Home.tsx
+ │    │    └── Login.tsx
+ │    │    └── Profile.tsx
  │    │    └── SignUp.tsx
  │    ├── router/
  │    │    └── index.tsx
