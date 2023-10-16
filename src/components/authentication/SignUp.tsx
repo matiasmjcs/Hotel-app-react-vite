@@ -34,7 +34,7 @@ export const SignUpComponent = () => {
       }
     }
     return (
-        <form onSubmit={signUp} className="max-w-md min-h-[200px] my-2 mx-auto flex flex-col items-center justify-center gap-2 md:w-[400px] text-black p-2 rounded-lg shadow-md">
+        <form onSubmit={signUp} className="w-5/6 max-w-[400px] min-h-[200px] my-2 mx-auto flex flex-col items-center justify-center gap-2 text-black p-2 rounded-lg shadow-md">
         <TextField
           type="text"
           className="w-5/6"
