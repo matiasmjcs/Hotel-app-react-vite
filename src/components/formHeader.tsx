@@ -2,7 +2,7 @@ import SearchIcon from '@mui/icons-material/Search';
 import PersonIcon from '@mui/icons-material/Person';
 export const FormHeader = () => {
     return (
-        <form className="grid grid-cols-1 grid-rows-4 md:flex md:h-[50px] justify-items-center p-2 w-full  relative top-28 gap-1 transparent rounded-lg justify-between">
+        <form className="grid grid-cols-1 grid-rows-4 md:flex md:h-[50px] justify-items-center p-2 w-full  relative top-28 gap-3 transparent rounded-lg justify-between">
             <article className='flex flex-row gap-2 w-[200px] md:w-[150px]'>
                 <label className='flex items-center' htmlFor="search">
                     <SearchIcon className="text-slate-600" />
