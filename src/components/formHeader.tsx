@@ -9,8 +9,8 @@ export const FormHeader = () => {
                 </label>
                 <input id="search" placeholder="Search" className="bg-transparent focus:outline-none" type="text" />
             </article>
-            <input id="checkin" className="transparent rounded-xl text-black px-2 w-[200px] md:w-[150px]" type="date" />
-            <input id="checkout" className="transparent rounded-xl text-black px-2 w-[200px] md:w-[150px]" type="date" />
+            <input id="checkin" value="2024-01-01" className="transparent rounded-xl text-black px-2 w-[200px] md:w-[150px]" type="date" />
+            <input id="checkout" value="2024-01-01" className="transparent rounded-xl text-black px-2 w-[200px] md:w-[150px]" type="date" />
             <article className='flex flex-row gap-2 items-center w-[200px] md:w-[150px]'>
                 <PersonIcon className="text-slate-600" />
                 <select className="bg-transparent px-2">
