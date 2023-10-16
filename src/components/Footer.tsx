@@ -11,8 +11,8 @@ const Footer = () => {
         <article className="w-5/6 p-2">
           <h2 className="text-2xl font-bold">Contact</h2>
           <ul className="mt-2">
-            <li className="text-sm">Email: matiasmejiascisternas@gmail.com</li>
-            <li className="text-sm">LinkedIn: <a target="_blank" href="https://www.linkedin.com/in/matias-mejias-cisternas" className="text-blue-300 hover:underline">Your Profile</a></li>
+            <li data-testid="email" className="text-sm">Email: matiasmejiascisternas@gmail.com</li>
+            <li className="text-sm">LinkedIn: <a data-testid="linkedin" target="_blank" href="https://www.linkedin.com/in/matias-mejias-cisternas" className="text-blue-300 hover:underline">Your Profile</a></li>
           </ul>
         </article>
       </section>
