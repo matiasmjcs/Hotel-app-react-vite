@@ -4,7 +4,7 @@ export default function NavBarComponent() {
   const location = useLocation();
   return (
     <nav className=" grid justify-items-end fixed top-0 right-0 font-mono z-10">
-      <ul className="flex flex-row gap-3 px-2 text-white font-semibold text-lg">
+      <ul className={`flex flex-row gap-3 px-2 ${location.pathname === "/" ? 'text-white' : 'text-slate-600'} font-semibold text-lg`}>
         <li className="p-2">
           <a href="/">Home</a>
         </li >
