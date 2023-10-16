@@ -1,13 +1,12 @@
 import { render } from '@testing-library/react';
 import { BrowserRouter } from 'react-router-dom';
-import { Loginsignup } from '../LoginSignup';
+import { LoginComponent } from '../../src/components/authentication/Login';
 
-describe('LoginSignup', () => {
+describe("Login", () => {
     test('renders the component', () => {
         render(
             <BrowserRouter>
-                <Loginsignup />
-            </BrowserRouter>
-        )
+                <LoginComponent />
+            </BrowserRouter>)
     })
 })

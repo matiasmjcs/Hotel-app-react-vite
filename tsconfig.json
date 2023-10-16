@@ -22,6 +22,6 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src", "setup.ts"],
+  "include": ["src", "setup.ts", "__test__/components/App.spec.tsx", "__test__/components/loginSignup.spec.tsx", "__test__/components/footer.spec.tsx", "__test__/components/NavBar.spec.tsx", "__test__/components/LinkAuthentication.spec.tsx", "__test__/components/Login.spec.tsx", "__test__/components/SignUp.spec.tsx", "__test__/components/TitleAuthentication.spec.tsx", "__test__/pages/Home.spec.tsx", "__test__/pages/Login.spec.tsx", "__test__/pages/Profile.spec.tsx", "__test__/pages/SignUp.spec.tsx"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

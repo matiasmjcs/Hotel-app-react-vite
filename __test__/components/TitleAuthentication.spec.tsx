@@ -1,12 +1,12 @@
 import { render } from '@testing-library/react'
-import NavBarComponent from '../NavBar'
+import { TitleAuthentication } from '../../src/components/authentication/TitleAuthentication'
 import { BrowserRouter } from 'react-router-dom'
 
-describe('NavBarComponent', () => {
+describe('TitleAuthentication', () => {
     test('renders the component', () => {
         render(
             <BrowserRouter>
-                <NavBarComponent />
+                <TitleAuthentication title="title for testing" />
             </BrowserRouter>
         )
     })

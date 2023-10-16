@@ -1,12 +1,12 @@
 import { render } from "@testing-library/react"
 import { BrowserRouter } from "react-router-dom"
-import Footer from "../Footer"
+import { Login } from "../../src/pages/Login"
 
-describe('Footer', () => {
-    test('renders the component', () => {
+describe("Login", () => {
+    test("renders the component", () => {
         render(
             <BrowserRouter>
-                <Footer />
+                <Login />
             </BrowserRouter>
         )
     })

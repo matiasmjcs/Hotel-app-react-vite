@@ -1,12 +1,12 @@
 import { render } from "@testing-library/react"
 import { BrowserRouter } from "react-router-dom"
-import { Login } from "../Login"
+import { Home } from "../../src/pages/Home"
 
-describe("Login", () => {
+describe("Home", () => {
     test("renders the component", () => {
         render(
             <BrowserRouter>
-                <Login />
+                <Home/>
             </BrowserRouter>
         )
     })

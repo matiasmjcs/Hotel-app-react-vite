@@ -1,12 +1,12 @@
-import { BrowserRouter } from 'react-router-dom';
-import App from '../App';
 import { render } from '@testing-library/react';
+import { BrowserRouter } from 'react-router-dom';
+import { Loginsignup } from '../../src/components/LoginSignup';
 
-describe('App', () => {
+describe('LoginSignup', () => {
     test('renders the component', () => {
         render(
             <BrowserRouter>
-                <App />
+                <Loginsignup />
             </BrowserRouter>
         )
     })
