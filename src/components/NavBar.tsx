@@ -3,7 +3,7 @@ export default function NavBarComponent() {
   const location = useLocation();
   return (
     <nav className=" grid justify-items-end fixed w-full transparent top-0 right-0 font-mono z-10">
-      <ul className={`flex flex-row gap-3 px-2 ${location.pathname === "/" ? 'text-white' : 'text-slate-600'} font-semibold text-lg`}>
+      <ul className={`flex flex-row gap-3 px-2 text-slate-600 font-semibold text-lg`}>
         <li className="p-2">
           <a href="/">Home</a>
         </li >
@@ -16,15 +16,11 @@ export default function NavBarComponent() {
         </li> : null
         }
         {
-          location.pathname === "/login" ?  <li className="p-2">
-          <a href="/signup">Signup</a>
-        </li> : null
+          location.pathname === "/login" 
+          ?  <li className="p-2"><a href="/signup">Signup</a></li> 
+          : <li className="p-2"><a href="/login">Login</a></li>
         }
-        {
-          location.pathname === "/signup" ? <li className="p-2">
-          <a href="/login">Login</a>
-        </li> : null
-        }
+        
       </ul>
     </nav>
   );
