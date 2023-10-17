@@ -11,11 +11,6 @@ export default function NavBarComponent() {
           <a href="/hotels">hotels</a>
         </li>
         {
-          location.pathname === "/" ?  <li className="p-2">
-          <a href="/login">login</a>
-        </li> : null
-        }
-        {
           location.pathname === "/login" 
           ?  <li className="p-2"><a href="/signup">Signup</a></li> 
           : <li className="p-2"><a href="/login">Login</a></li>
